@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact us</title>
+	<link rel="stylesheet" type="text/css" href="ContactForm.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+</head>
+<body>
+  <section class="ContactUs_section layout_padding">
+    <div class="container">
+  
+      <div class="contact-box">
+        <div class="left">
+          <div class="img-box">
+            <img src="contact_img.jpg">
+          </div>
+        </div>
+        <div class="right">
+          <form method="post" action="https://script.google.com/macros/s/AKfycbx68KsqREjsFGbpSrr5FciT5wezKs-fgWnXSZm0Z88JmcIgAaOpJNGv_XLkjYkv9gxAOA/exec" name="Customer Contact Database">
+            <div class="detail-box">
+  
+              <h3>Contact Us</h3>
+           
+              <input type="text"  class="field"  name="Name" placeholder="Name" pattern="[A-Za-z]{2,32}" title="Please enter a valid name without spaces" required>
+              <input type="tel"  class="field" name="PhoneNumber" placeholder="Phone Number"  pattern="[0-9]{10}" title="Please enter a 10-digit phone number" required >
+              <input type="email"  class="field" name="EmailAdress" placeholder="Email Adress" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Please enter a valid email adress" required >
+            
+              <select name="ContactType"  id="ContactType" required>
+                <option value="" disabled selected>Choose contact type</option>
+                <option value="Report issue">Report issue</option>
+                <option value="Send suggestion">Send suggestion</option>
+              </select>
+              <textarea name="Message" class="field" rows="7" placeholder="Enter your Message" required></textarea>
+      
+              <button class="btn">SUBMIT</button>
+              
+  
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By ManarAwad Devloper
+      </p>
+    </div>
+  </section>
+
+  <script src="ContactForm.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	
+</body>
+</html>
