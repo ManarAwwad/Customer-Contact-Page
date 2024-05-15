@@ -1,5 +1,3 @@
-Guinness tool to serve the beneficiaries of Taibah university campus
-
 How to create a Google sheet file and make it as a database.
 
 VS Code:
